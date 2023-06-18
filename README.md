@@ -20,11 +20,11 @@ ORC is live and can be accessed at [https://open-richman-co-pilot.web.app/](http
 
 To run ORC locally:
 
-\```bash
+```bash
 npm run dev
 # or
 yarn dev
-\```
+```
 
 Then, open [http://localhost:3000](http://localhost:3000) in your browser.
 
