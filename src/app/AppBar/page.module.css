@@ -1,0 +1,9 @@
+.logos {
+    border: white 1px solid;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.appbg {
+    background: rgba(32,33,35,1);
+}

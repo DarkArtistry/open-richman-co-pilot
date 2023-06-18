@@ -1,0 +1,26 @@
+{
+  "name": "open-richman-co-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@mui/x-data-grid": "^6.8.0",
+    "crypto-js": "^4.1.1",
+    "echarts-for-react": "^3.0.2",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.5",
+    "firebase": "^9.22.2",
+    "next": "13.4.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
