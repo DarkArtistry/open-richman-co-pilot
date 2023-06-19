@@ -784,7 +784,7 @@ export default function Portfolio() {
         }
         {
             <Grid item xs={3}>
-                <Typography>{`Account Principal: $ ${initialPrincipal + additionalSubscription + additionalRedemption}`}</Typography>
+                <Typography>{`Account Principal: $ ${parseFloat(initialPrincipal) + parseFloat(additionalSubscription) + parseFloat(additionalRedemption)}`}</Typography>
             </Grid>
         }
         {
