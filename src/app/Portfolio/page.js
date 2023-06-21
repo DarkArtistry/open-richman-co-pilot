@@ -151,7 +151,7 @@ export default function Portfolio() {
         },
         {
             field: 'adjustedActualPositionQuantity',
-            headerName: 'Adjusted Actual Position Quantity',
+            headerName: 'Actual Position Quantity',
             width: 150,
         },
         {
@@ -303,7 +303,8 @@ export default function Portfolio() {
             totalPortfolioMarketCap += portfolioTickerMarketCap;
         })
 
-        setTotalMarketCap(totalPortfolioMarketCap)
+        setTotalMarketCap(totalPortfolioMarketCap + parseFloat(usdtLiquidityShortPosition));
+        totalPortfolioMarketCap += usdtLiquidityShortPosition;
 
         // 
         let liquidity_short_positions = parseFloat(usdtLiquidityShortPosition) / (totalPortfolioMarketCap + parseFloat(usdtLiquidityShortPosition));
@@ -688,7 +689,7 @@ export default function Portfolio() {
                             <StyledTextField
                                 fullWidth
                                 id={`adjustedActualPositionQuantity-${index}`}
-                                label="Adjusted Actual Position Quantity"
+                                label="Actual Position Quantity"
                                 type="number"
                                 InputLabelProps={{ shrink: true }}
                                 value={adjustedActualPositionQuantity[ticker]}
