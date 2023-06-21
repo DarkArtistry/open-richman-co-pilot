@@ -304,7 +304,7 @@ export default function Portfolio() {
         })
 
         setTotalMarketCap(totalPortfolioMarketCap + parseFloat(usdtLiquidityShortPosition));
-        totalPortfolioMarketCap += usdtLiquidityShortPosition;
+        totalPortfolioMarketCap += parseFloat(usdtLiquidityShortPosition);
 
         // 
         let liquidity_short_positions = parseFloat(usdtLiquidityShortPosition) / (totalPortfolioMarketCap + parseFloat(usdtLiquidityShortPosition));
